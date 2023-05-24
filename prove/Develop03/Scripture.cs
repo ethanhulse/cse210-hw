@@ -10,7 +10,6 @@ public class Scripture
     private List<Word> words;
     private Random random;
 
-
     public Scripture(string referenceText, string scriptureText)
     {
         reference = new Reference(referenceText);
@@ -76,35 +75,3 @@ public class Scripture
         return unhiddenWords;
     }
 }
-
-public class Reference
-{
-
-    public string ReferenceText {get; private set;}
-
-    public Reference(string _referenceText)
-    {
-        ReferenceText = _referenceText;
-    }
-
-}
-
-public class Word
-{
-    public string Text {get; private set; }
-    public bool isHidden {get; private set;}
-
-    public Word(string _text)
-    {
-        Text = _text;
-    }
-
-    public void Hide()
-    {
-        isHidden = true;
-    }
-
-}
-
-
-
